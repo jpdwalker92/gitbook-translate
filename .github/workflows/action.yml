@@ -10,12 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-        - name: DeepL Translate Github Action 
-        uses: lyqht/deepl-translate-github-action@v1.0.0
-        with: 
-          target_languages: zh,ja 
-          input_file_path: getting-started/how-to-guides.md
-          output_file_name_prefix: getting-started/
-          deepl_api_key: ${{ secrets.DEEPL_API_KEY }} 
-      - uses: actions/checkout@v3
+        - name: Gitbook Translate
+          uses: jpdwalker/gitbook-translate@v1.0.0
+          with: 
+            target_languages: zh,ja 
+            input_file_path: getting-started/how-to-guides.md
+            output_file_name_prefix: getting-started/
+            deepl_api_key: ${{ secrets.DEEPL_API_KEY }}
 
