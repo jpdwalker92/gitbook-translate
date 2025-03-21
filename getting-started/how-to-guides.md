@@ -1,5 +1,5 @@
 ---
-description: How to eat your crisps
+description: How to eat your crisps like a boss
 icon: face-hand-yawn
 ---
 
