@@ -11,7 +11,7 @@ jobs:
 
     steps:
         - name: Gitbook Translate
-          uses: jpdwalker/gitbook-translate@v1.0.0
+          uses: jpdwalker92/gitbook-translate@v1.0.0
           with: 
             target_languages: zh,ja 
             input_file_path: getting-started/how-to-guides.md
