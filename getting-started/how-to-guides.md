@@ -5,4 +5,4 @@ icon: face-hand-yawn
 
 # How to guides
 
-Testing out the language integration again and again and again and again testing again test public test again testing doc creation
+This guide should be translated into Spanish now!
