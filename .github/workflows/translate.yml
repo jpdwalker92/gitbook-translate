@@ -14,7 +14,7 @@ jobs:
           uses: lyqht/deepl-translate-github-action@v1.0.0
           with: 
             target_languages: es
-            input_file_path: getting-started/how-to-guides.md
+            input_file_path: getting-started/, basics/
             output_file_name_prefix: getting-started/
             deepl_api_key: ${{ secrets.DEEPL_API_KEY }}
 
