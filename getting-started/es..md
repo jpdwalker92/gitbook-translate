@@ -5,4 +5,4 @@ icono: face-hand-yawn
 
 # Guías
 
-Probando la integración lingüística una y otra vez probando una y otra vez probando una y otra vez probando una y otra vez probando una y otra vez probando la creación de documentos
+¡Esta guía debería traducirse al español ya!
