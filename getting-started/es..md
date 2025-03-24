@@ -5,4 +5,4 @@ icono: face-hand-yawn
 
 # Guías
 
-¡Esta guía debería traducirse al español ya!
+¡Esta guía ya debería estar traducida al español! ¡Pero volvemos a probar!
