@@ -12,10 +12,10 @@
 
 ## Basics
 
+* [Integrations](basics/integrations.md)
 * [Images & media](basics/images-and-media.md)
 * [Interactive blocks](basics/interactive-blocks/README.md)
   * [OpenAPI](basics/interactive-blocks/openapi.md)
-* [Integrations](basics/integrations.md)
 
 ## Marketing
 
