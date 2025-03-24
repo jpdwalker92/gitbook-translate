@@ -5,4 +5,4 @@ icon: face-hand-yawn
 
 # How to guides
 
-This guide should be translated into Spanish now!
+This guide should be translated into Spanish now! But we test again!
