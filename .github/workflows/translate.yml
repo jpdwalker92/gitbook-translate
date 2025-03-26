@@ -10,9 +10,10 @@ jobs:
 
     steps:
         - name: Gitbook Translate
-          uses: jpdwalker92/deepl-translate-github-action@v1.0.0
+          uses: lyqht/deepl-translate-github-action@v1.0.0
           with: 
             target_languages: es
             input_file_path: SUMMARY.md
             output_file_name_prefix: SUMMARY.md
+            output_file_name_pattern: SUMMARY.md
             deepl_api_key: ${{ secrets.DEEPL_API_KEY }}
