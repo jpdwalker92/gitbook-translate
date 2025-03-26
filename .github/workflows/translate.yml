@@ -1,4 +1,4 @@
-name: Translate Files to Spanish
+name: Translate Directory to Spanish
 
 on:
   push:
@@ -13,41 +13,53 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up Python
-        uses: actions/setup-python@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
         with:
-          python-version: '3.x'
+          node-version: '16'  # Specify the Node.js version
 
       - name: Install dependencies
         run: |
-          pip install requests
+          npm install axios
 
       - name: Translate files
         env:
-          DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}  # Add your DeepL API key to repository secrets
+          DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}  # Your DeepL API key
         run: |
+          const fs = require('fs');
+          const path = require('path');
+          const axios = require('axios');
 
-          # Function to translate text using DeepL API
-          def translate_text(text):
-              url = "https://api-free.deepl.com/v2/translate"
-              params = {
-                  "auth_key": os.environ["DEEPL_API_KEY"],
-                  "text": text,
-                  "target_lang": "ES"
+          const translateText = async (text) => {
+              const url = "https://api-free.deepl.com/v2/translate";
+              const params = new URLSearchParams();
+              params.append('auth_key', process.env.DEEPL_API_KEY);
+              params.append('text', text);
+              params.append('target_lang', 'ES');
+
+              const response = await axios.post(url, params);
+              return response.data.translations[0].text;
+          };
+
+          const translateFiles = async (directory) => {
+              const files = fs.readdirSync(directory);
+              for (const file of files) {
+                  const filePath = path.join(directory, file);
+                  const stat = fs.statSync(filePath);
+                  if (stat.isDirectory()) {
+                      await translateFiles(filePath);  // Recursively translate files in subdirectories
+                  } else if (file.endsWith('.txt') || file.endsWith('.md')) {  // Adjust file types as needed
+                      const originalText = fs.readFileSync(filePath, 'utf8');
+                      const translatedText = await translateText(originalText);
+
+                      // Write translated text to a new file or overwrite existing
+                      const translatedFilePath = path.join(directory, `translated_${file}`);
+                      fs.writeFileSync(translatedFilePath, translatedText, 'utf8');
+                  }
               }
-              response = requests.post(url, data=params)
-              return response.json()["translations"][0]["text"]
+          };
 
-          # Directory containing files to translate
-          directory = "lays-crisps-content/"  # Change to your directory path
-
-          # Iterate over files in the directory
-          for filename in os.listdir(directory):
-              if filename.endswith(".md"): 
-                  with open(os.path.join(directory, filename), 'r', encoding='utf-8') as file:
-                      original_text = file.read()
-                      translated_text = translate_text(original_text)
-
-                  # Write translated text to a new file
-                  with open(os.path.join(directory, f'translated_{filename}'), 'w', encoding='utf-8') as file:
-                      file.write(translated_text)
+          // Specify the directory you want to translate
+          translateFiles('lays-crisps-content/')  // Change to your directory path
+            .then(() => console.log('Translation completed.'))
+            .catch(err => console.error('Error during translation:', err));
