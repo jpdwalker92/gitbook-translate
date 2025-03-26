@@ -15,6 +15,6 @@ jobs:
           with: 
             target_languages: es
             input_file_path: getting-started/how-to-guides.md
-            output_file_name_prefix: www.github.com/jpdwalker92/walkers-crisps-content/getting-started/
+            output_file_name_prefix: https://github.com/jpdwalker92/walkers-crisps-content/getting-started/
             deepl_api_key: ${{ secrets.DEEPL_API_KEY }}
 
