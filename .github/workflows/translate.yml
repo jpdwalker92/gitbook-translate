@@ -13,14 +13,6 @@ jobs:
           uses: lyqht/deepl-translate-github-action@v1.0.0
           with: 
             target_languages: es
-            input_file_path: getting-started/how-to-guides.md
-            output_file_name_prefix: getting-started/
-            deepl_api_key: ${{ secrets.DEEPL_API_KEY }}
-
-        - name: Gitbook Translate
-          uses: lyqht/deepl-translate-github-action@v1.0.0
-          with: 
-            target_languages: es
             input_file_path: SUMMARY.md
             output_file_name_prefix: SUMMARY.md
             deepl_api_key: ${{ secrets.DEEPL_API_KEY }}
