@@ -4,7 +4,7 @@
 
 ## Primeros pasos
 
-* [Inicio rápido](getting-started/quickstart.md)
+* [Inicio rápido](primeros-pasos/inicio-rapido.md)
 * [Publica tus documentos](getting-started/publish-your-docs/README.md)
   * [Markdown](getting-started/publish-your-docs/markdown/README.md)
     * [Editor](getting-started/publish-your-docs/markdown/editor.md)
