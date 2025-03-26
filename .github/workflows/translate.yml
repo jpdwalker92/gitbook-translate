@@ -1,19 +1,55 @@
-name: Spanish translate
+name: Translate Files to Spanish
 
 on:
   push:
-    branches: ["main"]
+    branches:
+      - main
 
 jobs:
   translate:
     runs-on: ubuntu-latest
 
     steps:
-        - name: Gitbook Translate
-          uses: lyqht/deepl-translate-github-action@v1.0.0
-          with: 
-            target_languages: es
-            input_file_path: getting-started/how-to-guides.md
-            output_file_name_prefix: getting-started/
-            deepl_api_key: ${{ secrets.DEEPL_API_KEY }}
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install requests
+
+      - name: Translate files
+        env:
+          DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}  # Add your DeepL API key to repository secrets
+        run: |
+          import os
+          import requests
+
+          # Function to translate text using DeepL API
+          def translate_text(text):
+              url = "https://api-free.deepl.com/v2/translate"
+              params = {
+                  "auth_key": os.environ["DEEPL_API_KEY"],
+                  "text": text,
+                  "target_lang": "ES"
+              }
+              response = requests.post(url, data=params)
+              return response.json()["translations"][0]["text"]
+
+          # Directory containing files to translate
+          directory = 'path/to/your/directory'  # Change to your directory path
+
+          # Iterate over files in the directory
+          for filename in os.listdir(directory):
+              if filename.endswith(".txt"):  # Assuming you are translating text files
+                  with open(os.path.join(directory, filename), 'r', encoding='utf-8') as file:
+                      original_text = file.read()
+                      translated_text = translate_text(original_text)
+
+                  # Write translated text to a new file
+                  with open(os.path.join(directory, f'translated_{filename}'), 'w', encoding='utf-8') as file:
+                      file.write(translated_text)
