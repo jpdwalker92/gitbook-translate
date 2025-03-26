@@ -1,6 +1,6 @@
-# Cómo guiar
+# How to guides test spanish
 
-Empecemos esto de nuevo y probémoslo y probémoslo de nuevo
+Empecemos esto otra vez y probémoslo y probémoslo otra vez
 
 Veamos si esto empuja a otro repo
 
