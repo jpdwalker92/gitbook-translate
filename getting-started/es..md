@@ -1,8 +1,3 @@
----
-descripción: Cómo comer patatas fritas como un jefe
-icono: face-hand-yawn
----
+# Cómo guiar
 
-# Guías
-
-¡Esta guía ya debería estar traducida al español! ¡Pero volvemos a probar!
+Empecemos de nuevo y probémoslo
