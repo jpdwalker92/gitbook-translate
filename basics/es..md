@@ -1,11 +1,13 @@
-# How to guides test spanish
+---
+icono: imagen-paisaje
+---
 
- Let's start this again and test it and test i xml-p
+# Imágenes y medios
 
-Let's see if this pushes to other repo
+GitBook te permite añadir imágenes y medios fácilmente a tus documentos. Simplemente arrastra un archivo al editor, o utiliza el gestor de archivos de la esquina superior derecha para subir varias imágenes a la vez.
 
-Let's see again try again here
+<figure><img src="https://gitbookio.github.io/onboarding-template-images/images-hero.png" alt=""><figcaption><p>Añade texto alternativo y pies de foto a tus imágenes</p></figcaption></figure>
 
-Testing output again after change
-
-lets test this again
+{% hint style="info" %}
+También puedes añadir imágenes simplemente copiándolas y pegándolas directamente en el editor - y GitBook las añadirá automáticamente a tu gestor de archivos.
+{% endhint %}
