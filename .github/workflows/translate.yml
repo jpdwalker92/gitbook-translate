@@ -3,6 +3,9 @@ name: Spanish translate
 on:
   push:
     branches: ["main"]
+    paths:
+     - '**.md'
+
 
 jobs:
   translate:
@@ -13,6 +16,6 @@ jobs:
           uses: lyqht/deepl-translate-github-action@v1.0.0
           with: 
             target_languages: es
-            input_file_path: getting-started/**.md
-            output_file_name_prefix: getting-started/**
+            input_file_path: '**/**.md'
+            output_file_name_prefix: '**/**.md'
             deepl_api_key: ${{ secrets.DEEPL_API_KEY }}
