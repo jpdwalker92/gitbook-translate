@@ -8,7 +8,7 @@
 * [Publish your docs](getting-started/publish-your-docs/README.md)
   * [Markdown](getting-started/publish-your-docs/markdown/README.md)
     * [Editor](getting-started/publish-your-docs/markdown/editor.md)
-* [How to guides](getting-started/es..md)
+* [How to guide](getting-started/es..md)
 
 ## Basics
 
