@@ -1,6 +1,5 @@
 ---
 icono: imagen-paisaje
-icon: image
 ---
 
 # Imágenes y medios
