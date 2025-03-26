@@ -12,11 +12,11 @@
 
 ## Conceptos básicos
 
-* [Integraciones](basics/integrations.md)
+* [Integraciones](basics/es.md)
 * [Imágenes y medios](basics/images-and-media.md)
 * [Bloques interactivos](basics/interactive-blocks/README.md)
   * [OpenAPI](conceptos-basicos/interactive-blocks/openapi.md)
 
 ## Marketing
 
-* [Ver nuestro trabajo](marketing/see-our-work.md)
+* [Ver nuestro trabajo](marketing/es..md)
