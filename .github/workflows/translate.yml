@@ -5,7 +5,7 @@ on:
     branches: ["main"]
 
 jobs:
-  translate-1:
+  translate-getting-started-how-to-guides:
       runs-on: ubuntu-latest
       steps:
         - name: Gitbook Translate getting-started
@@ -16,18 +16,41 @@ jobs:
             output_file_name_prefix: getting-started/
             deepl_api_key: ${{ secrets.DEEPL_API_KEY }}
 
-  translate-2:
+  translate-getting-started-editor:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Gitbook Translate getting-started
+          uses: lyqht/deepl-translate-github-action@v1.0.0
+          with: 
+            target_languages: es
+            input_file_path: getting-started/publish-your-docs/markdown/editor.md
+            output_file_name_prefix: getting-started/publish-your-docs/
+            deepl_api_key: ${{ secrets.DEEPL_API_KEY }}          
+
+  translate-basics-images-and-media:
      runs-on: ubuntu-latest
      steps:
         - name: Gitbook Translate basics
           uses: lyqht/deepl-translate-github-action@v1.0.0
           with: 
             target_languages: es
-            input_file_path: basics/images-and-media.md
+            input_file_path: basics/integrations.md
             output_file_name_prefix: basics/
             deepl_api_key: ${{ secrets.DEEPL_API_KEY }}
 
-  translate-3:
+  translate-basics-integrations:
+     runs-on: ubuntu-latest
+     steps:
+        - name: Gitbook Translate basics
+          uses: lyqht/deepl-translate-github-action@v1.0.0
+          with: 
+            target_languages: es
+            input_file_path: basics/integrations.md
+            output_file_name_prefix: basics/
+            deepl_api_key: ${{ secrets.DEEPL_API_KEY }}
+          
+
+  translate-marketing-see-our-work:
      runs-on: ubuntu-latest
      steps:
         - name: Gitbook Translate marketing
@@ -37,4 +60,16 @@ jobs:
             input_file_path: marketing/see-our-work.md
             output_file_name_prefix: marketing/
             deepl_api_key: ${{ secrets.DEEPL_API_KEY }}
+
+  translate-basics-read-me:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Gitbook Translate basics
+          uses: lyqht/deepl-translate-github-action@v1.0.0
+          with: 
+            target_languages: es
+            input_file_path: README.md
+            output_file_name_prefix: README.md
+            deepl_api_key: ${{ secrets.DEEPL_API_KEY }}
+        
 
