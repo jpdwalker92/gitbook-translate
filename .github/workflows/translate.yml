@@ -39,7 +39,7 @@ jobs:
               return response.json()["translations"][0]["text"]
 
           # Directory containing files to translate
-          directory = 'lays-crisps-content/'  # Change to your directory path
+          directory = "lays-crisps-content/"  # Change to your directory path
 
           # Iterate over files in the directory
           for filename in os.listdir(directory):
