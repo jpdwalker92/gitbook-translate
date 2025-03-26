@@ -1,4 +1,4 @@
-# Índice
+# Table of contents
 
 * [Bienvenido](README.md)
 
@@ -15,7 +15,7 @@
 * [Integraciones](basics/integrations.md)
 * [Imágenes y medios](basics/images-and-media.md)
 * [Bloques interactivos](basics/interactive-blocks/README.md)
-  * [OpenAPI](basics/bloques-interactivos/openapi.md)
+  * [OpenAPI](conceptos-basicos/interactive-blocks/openapi.md)
 
 ## Marketing
 

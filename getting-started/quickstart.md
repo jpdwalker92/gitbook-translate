@@ -2,11 +2,11 @@
 icon: bullseye-arrow
 ---
 
-# Quickstart
+# Inicio rápido
 
 <figure><img src="https://gitbookio.github.io/onboarding-template-images/quickstart-hero.png" alt=""><figcaption></figcaption></figure>
 
-Beautiful documentation starts with the content you create — and GitBook makes it easy to get started with any pre-existing content.
+Beautiful documentation starts with the content you create — and GitBook makes it easy to get started with any pre-existing content. Testing
 
 {% hint style="info" %}
 Want to learn about writing content from scratch? Head to the [Basics](publish-your-docs/markdown/editor.md) section to learn more.
@@ -22,7 +22,5 @@ GitBook supports importing content from many popular writing tools and formats. 
 
 GitBook also allows you to set up a bi-directional sync with an existing repository on GitHub or GitLab. Setting up Git Sync allows you and your team to write content in GitBook or in code, and never have to worry about your content becoming out of sync.
 
-
-
-Testing this
+Testing this\
 Testing this again
