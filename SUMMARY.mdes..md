@@ -1,11 +1,22 @@
-# How to guides test spanish
+# Índice
 
- Let's start this again and test it and test i xml-p
+* [Bienvenido](README.md)
 
-Let's see if this pushes to other repo
+## Primeros pasos
 
-Let's see again try again here
+* [Inicio rápido](getting-started/quickstart.md)
+* [Publica tus documentos](getting-started/publish-your-docs/README.md)
+  * [Markdown](getting-started/publish-your-docs/markdown/README.md)
+    * [Editor](getting-started/publish-your-docs/markdown/editor.md)
+* [Guía práctica](getting-started/es..md)
 
-Testing output again after change
+## Conceptos básicos
 
-lets test this again
+* [Integraciones](basics/integrations.md)
+* [Imágenes y medios](basics/images-and-media.md)
+* [Bloques interactivos](basics/interactive-blocks/README.md)
+  * [OpenAPI](basics/bloques-interactivos/openapi.md)
+
+## Marketing
+
+* [Ver nuestro trabajo](marketing/see-our-work.md)
