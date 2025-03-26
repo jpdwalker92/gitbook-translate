@@ -6,4 +6,4 @@ icon: face-hand-yawn
 
 # How to guides
 
-¡Esta guía ya debería estar traducida al español! ¡Pero volvemos a probar! Testing the translate function.
+¡Esta guía ya debería estar traducida al español! ¡Pero volvemos a probar! Testing the translate function following oath change.
