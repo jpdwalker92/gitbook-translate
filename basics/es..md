@@ -1,15 +1,10 @@
 ---
 icono: plug-circle-plus
-icon: image
 ---
 
 # Integraciones
 
-Las integraciones de GitBook te permiten conectar tus espacios de GitBook a algunas de tus plataformas y servicios favoritos. Puedes instalar integraciones en tu página de GitBook desde el menú
-
-Tstin thisge
-
-es _Integraciones_ de la parte superior izquierda.
+Las integraciones de GitBook te permiten conectar tus espacios de GitBook a algunas de tus plataformas y servicios favoritos. Puedes instalar integraciones en tu página de GitBook desde el menú _Integraciones_ en la parte superior izquierda.
 
 <figure><img src="https://gitbookio.github.io/onboarding-template-images/integrations-hero.png" alt=""><figcaption></figcaption></figure>
 
