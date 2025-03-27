@@ -24,7 +24,7 @@ jobs:
           with: 
             target_languages: es
             input_file_path: getting-started/publish-your-docs/markdown/editor.md
-            output_file_name_prefix: getting-started/publish-your-docs/
+            output_file_name_prefix: getting-started/publish-your-docs/markdown/
             deepl_api_key: ${{ secrets.DEEPL_API_KEY }}          
 
   translate-basics-images-and-media:
@@ -34,8 +34,8 @@ jobs:
           uses: lyqht/deepl-translate-github-action@v1.0.0
           with: 
             target_languages: es
-            input_file_path: basics/integrations.md
-            output_file_name_prefix: basics/
+            input_file_path: basics/images-and-media.md
+            output_file_name_prefix: basics/translate/
             deepl_api_key: ${{ secrets.DEEPL_API_KEY }}
 
   translate-basics-integrations:
