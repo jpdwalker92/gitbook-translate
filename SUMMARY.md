@@ -6,7 +6,7 @@
 
 * [Inicio rápido](primeros-pasos/inicio-rapido.md)
 * [Publica tus documentos](getting-started/publish-your-docs/README.md)
-  * [Markdown](getting-started/publish-your-docs/markdown/README.md)
+  * [Markdown](primeros-pasos/publish-your-docs/markdown/README.md)
     * [Editor](getting-started/publish-your-docs/markdown/editor.md)
 * [Guía práctica](getting-started/es..md)
 
