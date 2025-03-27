@@ -4,18 +4,17 @@
 
 ## Primeros pasos
 
-* [Inicio rápido](primeros-pasos/inicio-rapido.md)
+* [Inicio rápido](getting-started/inicio-rapido.md)
 * [Publica tus documentos](primeros-pasos/publica-tus-documentos/README.md)
   * [Markdown](primeros-pasos/publica-tus-documentos/markdown/README.md)
     * [Editor](getting-started/publish-your-docs/markdown/es..md)
-* [Guía práctica](getting-started/es..md)
 
 ## Conceptos básicos
 
-* [Integraciones](conceptos-basicos/integraciones.md)
+* [Integraciones](basics/es...md)
 * [Imágenes y medios](basics/es..md)
 * [Bloques interactivos](basics/interactive-blocks/README.md)
-  * [OpenAPI](conceptos-basicos/interactive-blocks/openapi.md)
+  * [OpenAPI](basics/interactive-blocks/openapi.md)
 
 ## Marketing
 
