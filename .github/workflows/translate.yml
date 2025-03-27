@@ -16,16 +16,38 @@ jobs:
             output_file_name_prefix: getting-started/
             deepl_api_key: ${{ secrets.DEEPL_API_KEY }}
 
-  translate-admin:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Gitbook Translate getting-started
+  translate-basics-integrations:
+     runs-on: ubuntu-latest
+     steps:
+        - name: Gitbook Translate basics
           uses: lyqht/deepl-translate-github-action@v1.0.0
           with: 
             target_languages: es
-            input_file_path: admin/admin-docs.md
-            output_file_name_prefix: admin/
+            input_file_path: basics/integrations.md
+            output_file_name_prefix: basics/
             deepl_api_key: ${{ secrets.DEEPL_API_KEY }}
+
+  translate-marketing-see-our-work:
+     runs-on: ubuntu-latest
+     steps:
+        - name: Gitbook Translate marketing
+          uses: lyqht/deepl-translate-github-action@v1.0.0
+          with: 
+            target_languages: es
+            input_file_path: marketing/see-our-work.md
+            output_file_name_prefix: marketing/
+            deepl_api_key: ${{ secrets.DEEPL_API_KEY }}
+            
+  #translate-admin:
+  #    runs-on: ubuntu-latest
+  #    steps:
+  #      - name: Gitbook Translate getting-started
+  #        uses: lyqht/deepl-translate-github-action@v1.0.0
+  #        with: 
+  #          target_languages: es
+  #          input_file_path: admin/admin-docs.md
+  #          output_file_name_prefix: admin/
+  #          deepl_api_key: ${{ secrets.DEEPL_API_KEY }}
 
   #translate-getting-started-editor:
   #    runs-on: ubuntu-latest
@@ -48,25 +70,3 @@ jobs:
  #          input_file_path: basics/images-and-media.md
  #          output_file_name_prefix: basics/
  #           deepl_api_key: ${{ secrets.DEEPL_API_KEY }}
-
-  translate-basics-integrations:
-     runs-on: ubuntu-latest
-     steps:
-        - name: Gitbook Translate basics
-          uses: lyqht/deepl-translate-github-action@v1.0.0
-          with: 
-            target_languages: es
-            input_file_path: basics/integrations.md
-            output_file_name_prefix: basics/
-            deepl_api_key: ${{ secrets.DEEPL_API_KEY }}
-
-  translate-marketing-see-our-work:
-     runs-on: ubuntu-latest
-     steps:
-        - name: Gitbook Translate marketing
-          uses: lyqht/deepl-translate-github-action@v1.0.0
-          with: 
-            target_languages: es
-            input_file_path: marketing/see-our-work.md
-            output_file_name_prefix: marketing/
-            deepl_api_key: ${{ secrets.DEEPL_API_KEY }}
