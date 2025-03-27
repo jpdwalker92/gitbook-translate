@@ -7,12 +7,12 @@
 * [Inicio rápido](primeros-pasos/inicio-rapido.md)
 * [Publica tus documentos](getting-started/publish-your-docs/README.md)
   * [Markdown](primeros-pasos/publish-your-docs/markdown/README.md)
-    * [Editor](getting-started/publish-your-docs/markdown/editor.md)
+    * [Editor](getting-started/publish-your-docs/markdown/es..md)
 * [Guía práctica](getting-started/es..md)
 
 ## Conceptos básicos
 
-* [Integraciones](basics/integrations.md)
+* [Integraciones](basics/es...md)
 * [Imágenes y medios](basics/es..md)
 * [Bloques interactivos](basics/interactive-blocks/README.md)
   * [OpenAPI](conceptos-basicos/interactive-blocks/openapi.md)
