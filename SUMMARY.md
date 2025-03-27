@@ -11,7 +11,7 @@
 
 ## Conceptos básicos
 
-* [Integraciones](basics/es...md)
+* [Integraciones](conceptos-basicos/integraciones.md)
 * [Imágenes y medios](basics/es..md)
 * [Bloques interactivos](basics/interactive-blocks/README.md)
   * [OpenAPI](basics/interactive-blocks/openapi.md)

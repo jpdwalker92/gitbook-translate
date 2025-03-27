@@ -1,5 +1,6 @@
 ---
 icono: flecha diana
+icon: bullseye-arrow
 ---
 
 # Inicio rápido
