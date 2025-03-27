@@ -5,14 +5,14 @@ on:
     branches: ["main"]
 
 jobs:
-  translate-getting-started-how-to-guides:
+  translate-quickstart:
       runs-on: ubuntu-latest
       steps:
         - name: Gitbook Translate getting-started
           uses: lyqht/deepl-translate-github-action@v1.0.0
           with: 
             target_languages: es
-            input_file_path: getting-started/how-to-guides.md
+            input_file_path: getting-started/quickstart.md
             output_file_name_prefix: getting-started/
             deepl_api_key: ${{ secrets.DEEPL_API_KEY }}
 
