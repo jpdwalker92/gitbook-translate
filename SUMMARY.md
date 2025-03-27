@@ -19,6 +19,3 @@
 ## Marketing
 
 * [Ver nuestro trabajo](marketing/es..md)
-
-## Admin
-* [Admin](admin/es..md)
